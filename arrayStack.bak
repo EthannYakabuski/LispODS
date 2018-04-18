@@ -1,0 +1,11 @@
+(define (make-arrayStack)
+
+
+
+  (define (dispatch method)
+    (cond ((eq? method 'print) print)
+          (else (lambda() (display "Unknown Request: ")(display method)(newline)))))
+
+  dispatch)
+
+
